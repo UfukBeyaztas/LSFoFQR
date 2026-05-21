@@ -1,6 +1,6 @@
 ## 📦 Installation
 
-You can install the development version of **robFJM** from GitHub:
+You can install the development version of **LSFoFQR** from GitHub:
 
 ```r
 install.packages("remotes")
