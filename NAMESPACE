@@ -1,0 +1,17 @@
+export(sfqfofr)
+export(make_sfqfofr_basis)
+export(generate_sfqfofr_data)
+export(default_tuning)
+export(make_tuning_grid)
+
+S3method(predict, sfqfofr)
+S3method(coef, sfqfofr)
+
+importFrom(Matrix, sparseMatrix, bdiag)
+
+importFrom(MASS, ginv, mvrnorm)
+
+importFrom(splines, bs)
+
+importFrom(stats, optim, qnorm, qt, rchisq, rnorm, sd)
+importFrom(graphics, par, persp, plot, lines, legend, mtext)

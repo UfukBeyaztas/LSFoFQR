@@ -1,0 +1,37 @@
+Package: LSFoFQR
+Type: Package
+Title: Locally Sparse Function-on-Function Quantile Regression
+Version: 0.1.0
+Authors@R: c(
+    person("Ufuk", "Beyaztas",
+      email = "ufuk.beyaztas@marmara.edu.tr",
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0002-5208-4950"))
+  )
+Description: Functions for fitting locally sparse simultaneous
+    function-on-function quantile regression models. The package implements a
+    three-stage estimation framework for functional responses and functional
+    predictors, where the quantile-varying regression kernel is represented by
+    tensor-product B-spline bases over the predictor, response, and quantile
+    domains. Smoothness is controlled through directional P-spline penalties,
+    while local sparsity is induced by an adaptive multiplicity-balanced
+    overlapping group-Lasso penalty acting on cuboidal blocks of spline
+    coefficients. Estimation proceeds through a smooth pilot fit, an adaptive
+    locally sparse fit, and a constrained refit on the selected active
+    coefficient set. The package provides functions for constructing the
+    required B-spline bases, fitting the proposed model, selecting tuning
+    parameters by a QBIC-type criterion, extracting estimated coefficient
+    surfaces, predicting conditional quantile response curves for new
+    functional predictors, and generating simulated data from a functional
+    location-scale model with known quantile-varying coefficient surfaces.
+Depends: R (>= 3.5.0)
+Imports:
+    Matrix,
+    MASS,
+    splines,
+    stats
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+RoxygenNote: 7.3.2
